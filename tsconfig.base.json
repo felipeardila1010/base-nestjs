@@ -14,7 +14,17 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@base-nestjs/user/adapter/infrastructure": [
+        "libs/user/adapter/infrastructure/src/index.ts"
+      ],
+      "@base-nestjs/user/adapter/interface": [
+        "libs/user/adapter/interface/src/index.ts"
+      ],
+      "@base-nestjs/user/application": ["libs/user/application/src/index.ts"],
+      "@base-nestjs/user/domain": ["libs/user/domain/src/index.ts"],
+      "@base-nestjs/user/entities": ["libs/user/entities/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
