@@ -1,6 +1,9 @@
 # BASE-NESTJS
 
-Main project with an app and libraries that support the develop with hexagonal architecture.
+> Main project with an app and libraries that support the develop with hexagonal architecture.
+
+[![Code Style: Google](https://img.shields.io/badge/code%20style-google-blueviolet.svg)](https://github.com/google/gts)
+[![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)]()
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
@@ -28,3 +31,12 @@ npx nx generate @nrwl/nest:library domain --directory=user --buildable --strict 
 npx nx generate @nrwl/nest:library entities --directory=user --buildable --strict --testEnvironment=jsdom --no-interactive
 
 ```
+
+npx nx generate @nrwl/nest:controller user --project=user-adapter-interface --module=UserAdapterInterfaceModule --directory=lib --language=ts --no-interactive
+
+npx nx generate @nrwl/nest:service user --project=user-application --directory=lib --language=ts --no-interactive
+
+### Other general configurations:
+
+- Google Typescript Style - GTS: Prettier and Eslint with some rules in 0 for nest. More information: .eslintrc.json
+- Husky (Lite version): Only in Pre-commit, for the future is necessary to include in all stages. in **TODO**

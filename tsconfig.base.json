@@ -1,4 +1,5 @@
 {
+  "extends": "./node_modules/gts/tsconfig-google.json",
   "compileOnSave": false,
   "compilerOptions": {
     "rootDir": ".",
@@ -8,13 +9,12 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@base-nestjs/share/domain": ["libs/share/domain/src/index.ts"],
       "@base-nestjs/user/adapter/infrastructure": [
         "libs/user/adapter/infrastructure/src/index.ts"
       ],

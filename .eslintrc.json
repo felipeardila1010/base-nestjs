@@ -1,4 +1,5 @@
 {
+  "extends": "./node_modules/gts/",
   "root": true,
   "ignorePatterns": ["**/*"],
   "plugins": ["@nrwl/nx"],
@@ -24,7 +25,9 @@
     {
       "files": ["*.ts", "*.tsx"],
       "extends": ["plugin:@nrwl/nx/typescript"],
-      "rules": {}
+      "rules": {
+        "node/no-extraneous-import": 0
+      }
     },
     {
       "files": ["*.js", "*.jsx"],
@@ -36,7 +39,9 @@
       "env": {
         "jest": true
       },
-      "rules": {}
+      "rules": {
+        "node/no-unpublished-import": 0
+      }
     }
   ]
 }
